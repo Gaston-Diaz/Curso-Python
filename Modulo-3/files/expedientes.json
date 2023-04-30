@@ -1,0 +1,18 @@
+[
+    {
+        "-CODIGO-": 555,
+        "-EMPRESA-": "empresa123",
+        "-CUIT-": "12345",
+        "-TELEFONO-": "0800",
+        "-CATEGORIA-": "tipo1",
+        "id": 1
+    },
+    {
+        "-CODIGO-": 3,
+        "-EMPRESA-": "empresa1",
+        "-CUIT-": "12345",
+        "-TELEFONO-": "0800",
+        "-CATEGORIA-": "tipo1",
+        "id": 2
+    }
+]
