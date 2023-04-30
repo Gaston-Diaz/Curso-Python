@@ -1,5 +1,6 @@
 import PySimpleGUI as sg
 from src.windows import pantalla_principal
+from src.component import ingresar_expediente
 
 def start():
     """
@@ -20,4 +21,6 @@ def loop():
         if event in (sg.WIN_CLOSED, "Exit", "-exit-", "Salir"):
             break
         
+        elif event == '-INGRESAR_EXPEDIENTE-':
+            ingresar_expediente.start()
     return window
