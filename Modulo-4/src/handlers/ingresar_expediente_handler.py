@@ -14,3 +14,15 @@ def agregar_expedientes(datos_nuevos):
     lista_expedientes.append(datos_nuevos)
     with open('Modulo-4/files/expedientes.json','w') as archivo:
         json.dump(lista_expedientes,archivo,indent=4)
+
+def leer_archivo():
+    """
+    Lee todos los datos de expedientes.json y los deveuleve como una lista de diccionarios
+    """
+    with open('Modulo-4/files/expedientes.json','r') as file:
+        datos = json.load(file) #para leerlo como diccionario
+        #convierte los datos a una lista de listas para que se pueda mostrar en la tabla
+    datos_para_tabla = []
+    for dato in datos:
+        datos_para_tabla.append([dato["-CODIGO-"], dato["-EMPRESA-"],dato["-CUIT-"], dato["-TELEFONO-"],dato["-CATEGORIA-"]])
+    return datos_para_tabla

@@ -25,5 +25,5 @@ def build():
         ]
     ]
 
-    window = sg.Window("Sistema integral v1.1", layout=layout, resizable=True)
+    window = sg.Window("Sistema integral v1.1", layout=layout, resizable=True, finalize= True)
     return window
